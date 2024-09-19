@@ -8,7 +8,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 -->
 <div align="center">
 
-  <img src="https://github.com/eiazeez/AETemplate/assets/92765887/29df0283-cda4-4d6c-8907-e80903ba27c0" alt="logo" width="200" height="auto" />
+  <img src=![alt text](image/serverest-logo.png) alt="logo" width="200" height="auto" />
   <h1>Serverest - Cypress Automation [azeez] :rocket:</h1>
 
   <p>
@@ -34,7 +34,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="" width="800" height="auto" alt="screenshot" />
+  <img src="![alt text](image.png)" width="800" height="auto" alt="screenshot" />
 </div>
 
 
@@ -55,14 +55,14 @@ Maybe you can mention me or this repo in the acknowledgements too
 Esse projeto utiliza NPM como Package Manager
 > ![Static Badge](https://img.shields.io/badge/20.10.0-GREEN?style=for-the-badge&logo=nodedotjs&logoColor=%23ffffff&label=Node.JS)
 
-> ![Static Badge](https://img.shields.io/badge/10.2.3-GREEN?style=for-the-badge&logo=npm&logoColor=%23ffffff&label=NPM)
+> ![Static Badge](https://img.shields.io/badge/10.8.2-GREEN?style=for-the-badge&logo=npm&logoColor=%23ffffff&label=NPM)
 
 <!-- Installation -->
 ### :gear: Instalação
 
 Clone o repositório para sua máquina
 ```bash
-  git clone https://github.com/eiazeez/AETemplate.git
+  git clone https://github.com/eiazeez/serverest-cypress-automation.git
 ```
 
 Vá para a pasta do repositório
@@ -79,7 +79,7 @@ Instale as depedências do projeto utilizando npm
 <!-- Running Tests -->
 ### :test_tube: Rodando os testes
 
-Para rodar os testes, utilize o comando abaixo
+Para rodar os testes com a interface gráfica do Cypress, utilize o comando abaixo
 ```bash
   npx cypress open
 ```
@@ -87,7 +87,7 @@ Para rodar os testes, utilize o comando abaixo
 <!-- Run headless -->
 ### :running: Rodando em headless
 
-Para rodar emm headless, pode utilizar o comando abaixo
+Para rodar em headless, pode utilizar o comando abaixo
 
 ```bash
   npx cypress run --browser chrome
@@ -126,16 +126,16 @@ it('Então deve ser possível se cadastrar com sucesso', function(){
 * [x] Home
 * [x] Login
 * [x] Products
-* [x] Signup
+* [x] Access
+  * [ ] Signup
+  * [ ] Login 
 
 
 <!-- Contact -->
 ## :handshake: Contato
-O Automation Exercise - Cypress Project foi um projeto elaborado em um treinamento mentorado por:
+O Serverest - Cypress Automation [azeez] foi um projeto elaborado como parte de um teste técnico do candidato:
 
 👨‍🏫 - Isaac Douglas
 > 🌐 Seu Linkedin é [linkedin.com/in/isaacdouglas](https://www.linkedin.com/in/isaacdouglas/)
 
 > 💻 Seu github é [github.com/eiazeez](https://github.com/eiazeez)
-
-Link para o Projeto Original: [https://github.com/eiazeez/autoExercise](https://github.com/eiazeez/autoExercise)
