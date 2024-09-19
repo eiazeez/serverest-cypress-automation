@@ -1,0 +1,24 @@
+{
+
+  "admin_user": {
+      "name": "Usuário de Teste - Admin",
+      "email": "usuario-teste-admin@isaac.com",
+      "password": "senhaComum",
+      "admin": "true"
+  },
+
+  "signup_user": {
+      "name": "Usuário de Teste - Cadastro",
+      "email": "usuario-teste-cadastro@isaac.com",
+      "password": "senhaComum",
+      "admin": "false"
+  },
+
+  "duplicated_user": {
+      "name": "Usuário de Teste - Duplicado",
+      "email": "usuario-teste-duplicado@isaac.com",
+      "password": "senhaComum",
+      "admin": "false"
+  }
+    
+}
