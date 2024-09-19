@@ -34,7 +34,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 ### :camera: Screenshots
 
 <div align="center"> 
-  <img src="![alt text](image.png)" width="800" height="auto" alt="screenshot" />
+  <img src="" width="800" height="auto" alt="screenshot" />
 </div>
 
 
@@ -45,6 +45,16 @@ Maybe you can mention me or this repo in the acknowledgements too
 <!-- Dev Dependencies -->
 ### 🛠️ Dev Dependencies
 > ![Static Badge](https://img.shields.io/badge/1.5.0-fe6b5c?style=for-the-badge&logo=cloudfoundry&logoColor=%23ffffff&label=CYPRESS-PLUGIN-API&labelColor=orange)
+
+<!-- Roadmap -->
+## 📄 Páginas testadas
+
+* [x] Cart  |  -> Testes limitados devido ao desenvolvimento da funcionalidade estar em andamento.
+* [x] Home
+* [x] Wishlist
+* [x] Access
+  * [ ] Signup
+  * [ ] Login 
 
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
@@ -117,23 +127,9 @@ it('Então deve ser possível se cadastrar com sucesso', function(){
 })
 ```
 
-<!-- Roadmap -->
-## 📄 Páginas testadas
-
-* [x] Cart
-* [x] Checkout
-* [x] ContactUs
-* [x] Home
-* [x] Login
-* [x] Products
-* [x] Access
-  * [ ] Signup
-  * [ ] Login 
-
-
 <!-- Contact -->
 ## :handshake: Contato
-O Serverest - Cypress Automation [azeez] foi um projeto elaborado como parte de um teste técnico do candidato:
+O Serverest - Cypress Automation [azeez] é um projeto de automação criado por:
 
 👨‍🏫 - Isaac Douglas
 > 🌐 Seu Linkedin é [linkedin.com/in/isaacdouglas](https://www.linkedin.com/in/isaacdouglas/)
