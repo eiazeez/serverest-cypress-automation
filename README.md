@@ -8,7 +8,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 -->
 <div align="center">
 
-  <img src=![alt text](image/serverest-logo.png) alt="logo" width="200" height="auto" />
+  <img src="image/serverest-logo.png" alt="drawing" style="width:300px;"/>
   <h1>Serverest - Cypress Automation [azeez] :rocket:</h1>
 
   <p>
