@@ -26,6 +26,23 @@ Maybe you can mention me or this repo in the acknowledgements too
 
 <br />
 
+<!-- Table of Contents -->
+# :notebook_with_decorative_cover: Índice
+
+- [Sobre o projeto](#star2-sobre-o-projeto)
+  * [Time-lapse](#camera-time-lapse)
+  * [Tech Stack](#space_invader-tech-stack)
+  * [Dev Dependencies](#%EF%B8%8F-dev-dependencies)
+  * [Páginas testadas](#-páginas-testadas)
+- [Getting Started](#toolbox-getting-started)
+  * [Pré-requisitos](#bangbang-pré-requisitos)
+  * [Instalação](#gear-instalação)
+  * [Rodando os testes](#test_tube-rodando-os-testes)
+  * [Rodando em headless](#running-rodando-em-headless)
+- [Padronização de Código](#eyes-padronização-de-código)
+- [Massa de dados](#card_index_dividers-massa-de-dados)
+- [Contato](#handshake-contato)
+
 <!-- About the Project -->
 ## :star2: Sobre o projeto
 
@@ -127,6 +144,53 @@ it('Então deve ser possível se cadastrar com sucesso', function(){
 
 })
 ```
+
+<!-- Usage -->
+## :card_index_dividers: Massa de dados
+
+Este projeto trabalha com massa de dados fixa utilizando a pasta fixture como repositório da massa de dados.
+
+Para os produtos, foi utilizado a nomeclatura "Isaac D." ao final do nome do produto
+```json
+"add_to_Wishlist": {
+      "nome": "Apple MacBook Pro 16 - Isaac D.",
+      "preco": 18490,
+      "descricao": "Notebook de alta performance",
+      "quantidade": 58
+    }
+```
+
+Quanto aos usuários, os emails são do domínio fictício "@isaac.com" 
+
+```json
+ "login_user": {
+      "name": "Usuário de Teste - Login",
+      "email": "usuario-teste-login@isaac.com",
+      "password": "senhaComum",
+      "admin": "false"
+  }
+```
+
+E para garantir que a massa fixa funcione em todas as execuções sem interferências externas, utilizo a preparação de massa para seus respectivos testes. 
+
+```javascript
+ it('Então não deve ser possível cadastrar um user já cadastrado', function() {
+
+      const user = this.users.duplicated_user
+  
+      cy.apiDeleteUser(user)
+      cy.apiPostUser(user)
+  
+      Access.visitSignup()
+      Access.fillSignupForm(user)
+      Access.submit()
+      Access.messageShouldBe('Este email já está sendo usado')
+      
+    })
+  })
+```
+
+No caso acima, para garantir a massa fixa, é deletado através do "cy.apiDeleteUser(user)" e criado o usuário usando "cy.apiPostUser(user)" para garantir que o usuário já exista e o teste possar ser validado.
 
 <!-- Contact -->
 ## :handshake: Contato
