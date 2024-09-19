@@ -31,10 +31,11 @@ Maybe you can mention me or this repo in the acknowledgements too
 
 
 <!-- Screenshots -->
-### :camera: Screenshots
+### :camera: Time-lapse
+ 
 
 <div align="center"> 
-  <img src="" width="800" height="auto" alt="screenshot" />
+  <img src="image/timelapse.gif" width="800" height="auto" alt="screenshot" />
 </div>
 
 
@@ -49,7 +50,7 @@ Maybe you can mention me or this repo in the acknowledgements too
 <!-- Roadmap -->
 ## 📄 Páginas testadas
 
-* [x] Cart  |  -> Testes limitados devido ao desenvolvimento da funcionalidade estar em andamento.
+* [x] Cart  |  -> Testes limitados devido ao desenvolvimento da funcionalidade estar em andamento
 * [x] Home
 * [x] Wishlist
 * [x] Access
