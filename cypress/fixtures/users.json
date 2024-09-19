@@ -6,6 +6,12 @@
       "password": "senhaComum",
       "admin": "false"
   },
+  "api_test": {
+      "name": "Usuário de Teste - Api Post",
+      "email": "usuario-teste-api@isaac.com",
+      "password": "senhaComum",
+      "admin": "false"
+  },
   "admin_user": {
       "name": "Usuário de Teste - Admin",
       "email": "usuario-teste-admin@isaac.com",

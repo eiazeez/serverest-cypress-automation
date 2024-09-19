@@ -11,13 +11,13 @@
       "descricao": "Smartphone com câmera de 108 MP",
       "quantidade": 140
     },
-    "produto_3": {
+    "remove_product": {
       "nome": "Sony WH-1000XM5 - Isaac D.",
       "preco": 1999,
       "descricao": "Fone de ouvido com cancelamento de ruído",
       "quantidade": 210
     },
-    "produto_4": {
+    "increase_quantity": {
       "nome": "Asus ROG Strix G15 - Isaac D.",
       "preco": 12500,
       "descricao": "Notebook gamer com RTX 3080",
