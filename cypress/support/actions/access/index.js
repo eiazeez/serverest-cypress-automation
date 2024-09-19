@@ -6,11 +6,20 @@ export const Access = {
         cy.visit('/cadastrarusuarios')
     },
 
+    visitLogin: () => {
+        cy.visit('/login')
+    },
+
     fillSignupForm: (user) => {
-        cy.get(el.inputName).type(user.name)
-        cy.get(el.inputEmail).type(user.email)
-        cy.get(el.inputPassword).type(user.password)
+        if (user.name)      cy.get(el.inputName).type(user.name)
+        if (user.email)     cy.get(el.inputEmail).type(user.email)
+        if (user.password)  cy.get(el.inputPassword).type(user.password)
         if (user.admin === "true" ) cy.get(el.inputAdmin).check()
+    },
+
+    fillLoginForm: (user) => {
+        if (user.email)     cy.get(el.inputEmail).type(user.email)
+        if (user.password)  cy.get(el.inputPassword).type(user.password)
     },
 
     submit: () => {

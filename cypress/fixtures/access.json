@@ -14,11 +14,35 @@
       "admin": "false"
   },
 
+  "deleted_user": {
+      "name": "Usuário de Teste - Deletado",
+      "email": "usuario-teste-deletado@isaac.com",
+      "password": "senhaComum",
+      "admin": "false"
+    },
+
   "duplicated_user": {
       "name": "Usuário de Teste - Duplicado",
       "email": "usuario-teste-duplicado@isaac.com",
       "password": "senhaComum",
       "admin": "false"
+  },
+
+  "missing_fields": {
+    "missing_name": {
+      "email": "usuario-teste-semNome@isaac.com",
+      "password": "senhaComum",
+      "admin": "false"
+    },
+    "missing_email": {
+      "name": "Usuário de Teste - Sem Email",
+      "password": "senhaComum",
+      "admin": "false"
+    },
+    "missing_password": {
+      "name": "Usuário de Teste - Sem Senha",
+      "email": "usuario-teste-semSenha@isaac.com",
+      "admin": "false"
+    }
   }
-    
 }
