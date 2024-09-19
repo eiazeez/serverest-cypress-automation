@@ -1,5 +1,11 @@
 {
 
+  "login_user": {
+      "name": "Usuário de Teste - Login",
+      "email": "usuario-teste-login@isaac.com",
+      "password": "senhaComum",
+      "admin": "false"
+  },
   "admin_user": {
       "name": "Usuário de Teste - Admin",
       "email": "usuario-teste-admin@isaac.com",

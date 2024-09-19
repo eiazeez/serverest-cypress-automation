@@ -1,0 +1,56 @@
+{
+    "add_to_Wishlist": {
+      "nome": "Apple MacBook Pro 16 - Isaac D.",
+      "preco": 18490,
+      "descricao": "Notebook de alta performance",
+      "quantidade": 58
+    },
+    "search_product": {
+      "nome": "Samsung Galaxy S23 Ultra - Isaac D.",
+      "preco": 7899,
+      "descricao": "Smartphone com câmera de 108 MP",
+      "quantidade": 140
+    },
+    "produto_3": {
+      "nome": "Sony WH-1000XM5 - Isaac D.",
+      "preco": 1999,
+      "descricao": "Fone de ouvido com cancelamento de ruído",
+      "quantidade": 210
+    },
+    "produto_4": {
+      "nome": "Asus ROG Strix G15 - Isaac D.",
+      "preco": 12500,
+      "descricao": "Notebook gamer com RTX 3080",
+      "quantidade": 25
+    },
+    "produto_5": {
+      "nome": "Amazon Echo Show 8 - Isaac D.",
+      "preco": 899,
+      "descricao": "Assistente virtual com tela",
+      "quantidade": 512
+    },
+    "produto_6": {
+      "nome": "Microsoft Surface Pro 9 - Isaac D.",
+      "preco": 11990,
+      "descricao": "Tablet híbrido com teclado destacável",
+      "quantidade": 72
+    },
+    "produto_7": {
+      "nome": "GoPro Hero 11 Black - Isaac D.",
+      "preco": 2999,
+      "descricao": "Câmera de ação com 5K",
+      "quantidade": 89
+    },
+    "produto_8": {
+      "nome": "Dell Ultrasharp 27 4K - Isaac D.",
+      "preco": 3499,
+      "descricao": "Monitor 4K UHD",
+      "quantidade": 320
+    },
+    "produto_9": {
+      "nome": "HyperX Alloy Origins - Isaac D.",
+      "preco": 749,
+      "descricao": "Teclado mecânico RGB",
+      "quantidade": 450
+    }
+  }

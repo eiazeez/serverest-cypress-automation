@@ -10,6 +10,10 @@ export const Access = {
         cy.visit('/login')
     },
 
+    shouldBeVisible: () => {
+        cy.get(el.form)
+    },
+
     fillSignupForm: (user) => {
         if (user.name)      cy.get(el.inputName).type(user.name)
         if (user.email)     cy.get(el.inputEmail).type(user.email)

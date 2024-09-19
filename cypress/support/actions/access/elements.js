@@ -3,5 +3,6 @@ exports.el = {
     inputEmail: 'input[data-testid="email"]',
     inputPassword:'input[name=password]',
     inputAdmin: 'input[data-testid="checkbox"]',
-    submit: 'button[type=submit]'
+    submit: 'button[type=submit]',
+    form: '.form'
 }

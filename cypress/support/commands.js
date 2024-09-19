@@ -68,3 +68,68 @@ Cypress.Commands.add('apiPostUser', (data) => {
         expect(response.status).to.eq(201)
     })
 })
+
+Cypress.Commands.add('apiLogin', (data) => {
+
+    cy.apiDeleteUser(data)
+    cy.apiPostUser(data)
+    cy.api({
+        url: `${Cypress.env('api_server')}/login`,
+        method: 'POST',
+        body: {
+            email: data.email,
+            password: data.password
+        }
+    }).then(response => {
+        window.localStorage.setItem('serverest/userToken', response.body.authorization)
+    })
+
+})
+
+Cypress.Commands.add('getProductByName', (name) => {
+    return cy.api({  
+                url: `${Cypress.env('api_server')}/produtos/`,
+                method: 'GET'
+            }).then(response => {
+                expect(response.status).to.eq(200)
+                const products = response.body.produtos || response.body
+                expect(Array.isArray(products)).to.be.true
+                const product = products.find(p => p.nome === name)  
+                return product  
+        })
+})
+
+Cypress.Commands.add('apiAddProduct', (product) => {
+
+    cy.api({
+        url: `${Cypress.env('api_server')}/produtos`,
+        method: 'POST',
+        headers: { Authorization: `${window.localStorage.getItem('serverest/userToken')}` },
+        body: {
+            nome: product.nome,
+            preco: product.preco,
+            descricao: product.descricao,
+            quantidade: product.quantidade
+        }
+    }).then(response => {
+        expect(response.status).to.eq(201)
+        
+    })
+})
+
+Cypress.Commands.add('apiDeleteProduct', (data) => {
+    cy.getProductByName(data.nome).then(product => {
+        expect(product).to.not.be.undefined
+        const productId = product._id
+
+        cy.log(`Product ID: ${productId}`)
+
+        cy.api({
+            url: `${Cypress.env('api_server')}/produtos/${productId}`,
+            method: 'DELETE',
+            headers: { Authorization: `${window.localStorage.getItem('serverest/userToken')}` }
+        }).then(response => {
+            expect(response.status).to.eq(200)
+        })
+    })    
+})

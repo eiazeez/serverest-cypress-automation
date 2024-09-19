@@ -4,8 +4,8 @@ import { Home } from "../support/actions/home"
 describe('Dado que estou na página de acesso', function() {
 
   beforeEach(function(){
-    cy.fixture('access').then(function(user){
-        this.access = user
+    cy.fixture('users').then(function(user){
+        this.users = user
         this.missing_fields = user.missing_fields
     })
   })
@@ -14,7 +14,7 @@ describe('Dado que estou na página de acesso', function() {
 
     it('Então deve ser possível cadastrar um user comum com sucesso', function() {
 
-      const user = this.access.signup_user
+      const user = this.users.signup_user
 
       cy.apiDeleteUser(user)
 
@@ -28,7 +28,7 @@ describe('Dado que estou na página de acesso', function() {
 
     it('Então deve ser possível cadastrar um user Admin com sucesso', function() {
 
-      const user = this.access.admin_user
+      const user = this.users.admin_user
 
       cy.apiDeleteUser(user)
 
@@ -45,7 +45,7 @@ describe('Dado que estou na página de acesso', function() {
   context('Quando não preencho os campos de cadastro com dados válidos', function() {
     it('Então não deve ser possível cadastrar um user já cadastrado', function() {
 
-      const user = this.access.duplicated_user
+      const user = this.users.duplicated_user
   
       cy.apiDeleteUser(user)
       cy.apiPostUser(user)
@@ -81,7 +81,7 @@ describe('Dado que estou na página de acesso', function() {
 
     it('Então deve ser possível logar como User com sucesso', function() {
 
-      const user = this.access.signup_user
+      const user = this.users.signup_user
 
       cy.apiDeleteUser(user)
       cy.apiPostUser(user)
@@ -95,7 +95,7 @@ describe('Dado que estou na página de acesso', function() {
 
     it('Então deve ser possível logar como Admin com sucesso', function() {
 
-      const user = this.access.admin_user
+      const user = this.users.admin_user
 
       cy.apiDeleteUser(user)
       cy.apiPostUser(user)
@@ -113,7 +113,7 @@ describe('Dado que estou na página de acesso', function() {
 
     it('Então não deve ser possível logar com um user não cadastrado', function() {
   
-        const user = this.access.deleted_user
+        const user = this.users.deleted_user
   
         cy.apiDeleteUser(user)
   
