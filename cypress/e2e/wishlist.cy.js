@@ -1,5 +1,5 @@
-import { Wishlist } from "../support/actions/wishlist"
-import { Home } from "../support/actions/home"
+import { Wishlist } from '../support/actions/pages/wishlist'
+import { Home } from  '../support/actions/pages/home'
 
 describe('Dado que possuo uma conta válida', function() {
 

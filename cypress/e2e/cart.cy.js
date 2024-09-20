@@ -1,4 +1,4 @@
-import { Cart } from '../support/actions/cart'
+import { Cart } from '../support/actions/pages/cart'
 
 describe('Dado que estou logado no sistema', function() {
 

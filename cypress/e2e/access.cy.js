@@ -1,5 +1,5 @@
-import { Access } from "../support/actions/access"
-import { Home } from "../support/actions/home"
+import { Access } from "../support/actions/pages/access"
+import { Home } from "../support/actions/pages/home"
 
 describe('Dado que estou na página de acesso', function() {
 

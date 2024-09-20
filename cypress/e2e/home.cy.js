@@ -1,8 +1,8 @@
-const { Home } = require("../support/actions/home")
-const { Header } = require("../support/actions/components/header/header")
-const { Cart } = require("../support/actions/cart")
-const { Wishlist } = require("../support/actions/wishlist")
-const { Access } = require("../support/actions/access")
+import { Header } from "../support/actions/components/header"
+import { Cart } from "../support/actions/pages/cart"
+import { Wishlist } from "../support/actions/pages/wishlist"
+import { Access } from "../support/actions/pages/access"
+import { Home } from "../support/actions/pages/home"
 
 describe('Dado que possuo uma conta válida', function() {
 
