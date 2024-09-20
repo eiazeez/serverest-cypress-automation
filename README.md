@@ -148,7 +148,7 @@ it('Então deve ser possível se cadastrar com sucesso', function(){
 <!-- Usage -->
 ## :card_index_dividers: Massa de dados
 
-Este projeto trabalha com massa de dados fixa utilizando a pasta fixture como repositório da massa de dados.
+Este projeto trabalha com massa de dados fixa utilizando a pasta fixture como repositório da massa de dados. Assim, fica fácil de identificar a massa gerada pela automação, além de não poluir o banco, já que a própria automação fica responsável por preparar o ambiente para receber a massa.
 
 Para os produtos, foi utilizado a nomeclatura "Isaac D." ao final do nome do produto
 ```json
