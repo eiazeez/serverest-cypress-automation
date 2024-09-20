@@ -125,6 +125,39 @@ Para rodar em headless, pode utilizar o comando abaixo
 <!-- Usage -->
 ## :eyes: Padronização de código
 
+Os testes foram escritos seguindo o padrão Mocha de escrita
+
+<div align="center"> 
+  <img src="image/code.png" width="800" height="auto" alt="screenshot" />
+</div>
+
+Portanto, os testes ficam fácil de visualizar, como no exemplo abaixo:
+
+```javascript
+ describe('Dado que estou logado no sistema', function() {
+
+    beforeEach(function(){
+        cy.fixture('users').then(function(user){
+            this.users = user
+        })
+    })
+
+    context('Quando acesso a página de carrinho', function() {
+
+        const message = 'Em construção aguarde'
+
+        it(`Deve ser possível validar a mensagem ${message}`, function() {
+            const user = this.users.login_user
+
+            cy.apiLogin(user)       
+            Cart.go()
+            Cart.shouldBeVisible()
+        })
+    })
+})
+```
+
+
 Este projeto trabalha com PageObjects + Cypress Custom Commands
 
 
