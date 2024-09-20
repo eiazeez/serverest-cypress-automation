@@ -3,5 +3,6 @@ exports.el = {
     name: 'h5[class="card-title negrito"]',
     addButton: 'button[data-testid="adicionarNaLista"]',
     search: 'input[data-testid="pesquisar"]',
-    searchButton: 'button[data-testid="botaoPesquisar"]'
+    searchButton: 'button[data-testid="botaoPesquisar"]',
+    card: '.card-body'
 }

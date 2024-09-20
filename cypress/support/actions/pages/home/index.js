@@ -24,7 +24,7 @@ export const Home = {
     addToWishlist: (product) => {
         cy.get(el.name)
             .contains(product.nome)
-            .parents('.card-body')
+            .parents(el.card)
             .find(el.addButton)
             .click()
     }
