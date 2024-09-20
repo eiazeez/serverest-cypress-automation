@@ -7,6 +7,8 @@ module.exports = defineConfig({
     viewportHeight: 900,
     defaultCommandTimeout: 10000, 
     pageLoadTimeout: 70000, 
+    numTestsKeptInMemory: 0,
+    experimentalRunAllSpecs: true,
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
